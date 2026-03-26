@@ -1,0 +1,21 @@
+{
+  "name": "mapend",
+  "version": "0.0.3",
+  "description": "Maintainable App End",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Bangla Fighter",
+    "url": "https://banglafighter.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/banglafighter/mapend"
+  },
+  "packageManager": "pnpm@10.28.2",
+    "keywords": [
+    "mapend",
+    "react",
+    "react native",
+    "framework"
+  ]
+}
