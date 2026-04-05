@@ -1,6 +1,7 @@
 import {BootProps} from "../data/boot-props";
 import {useAppContext} from "../hook/use-app-context";
 import {registerRootComponent} from "expo";
+import MapendEngine from "./mapend-engine";
 
 
 export const Mapend = {
@@ -9,6 +10,11 @@ export const Mapend = {
         const {setConfig, setUiAction} = useAppContext.get()
         setConfig({...registry.config})
         setUiAction({...registry.adapter.setUIAdapter().action})
-        return registerRootComponent(mainComponent);
+
+        function InternalComponent() {
+            return (<MapendEngine mainComponent={mainComponent} registry={registry}/>)
+        }
+
+        return registerRootComponent(InternalComponent);
     }
 }
