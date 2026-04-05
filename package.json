@@ -1,9 +1,9 @@
 {
-  "name": "mmcore",
-  "version": "0.0.2",
+  "name": "mapend",
+  "version": "0.0.1",
   "description": "Maintainable App End Framework - mapend",
   "dependencies": {
-    
+
   },
   "license": "Apache-2.0",
   "main": "src/index.ts",
